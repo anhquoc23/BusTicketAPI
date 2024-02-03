@@ -5,6 +5,7 @@ import { Container } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Header from './layout/Header';
 import Footer from './layout/Footer';
+import Trip from './components/trip/Trip';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Container>
           <Routes>
             <Route path='/' element={<h1>Hello World!!!</h1>} />
+            <Route path='/trip/list' element={<Trip />} />
           </Routes>
         </Container>
       </BrowserRouter>
